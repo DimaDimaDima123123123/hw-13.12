@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 1</title>
+</head>
+
+<body>
+    <script>
+        function User(firstName, lastName) 
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        User.prototype.show = function ()
+        {
+            document.write(`${this.firstName} ${this.lastName}<br>`);
+        };
+
+        let user1 = new User("Anna", "Smith");
+        let user2 = new User("John", "Doe");
+
+        user1.show();
+        user2.show();
+    </script>
+</body>
+</html>
